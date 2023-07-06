@@ -24,4 +24,5 @@ Route::controller(Api\UserController::class)
     ->name('user-')
     ->group(function () {
         Route::get('list', 'index')->name('list');
+        Route::post('store', 'onStore')->name('store');
     });
